@@ -2,7 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dabar Designs - Professional graphic designer crafting bold visual identities, impactful designs, and memorable brand experiences. Branding, social media, print, UI design, and more.">
+    <meta name="keywords" content="graphic design, branding, logo design, portfolio, visual design, social media design">
+    <meta name="author" content="Dabar Designs">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrieloladipo.github.io/Dabar/">
+    <meta property="og:title" content="Dabar Designs | Graphic Design Portfolio">
+    <meta property="og:description" content="Creative graphic designer specializing in branding, social media, print, and UI design.">
+    <meta property="og:image" content="https://gabrieloladipo.github.io/Dabar/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
+    
     <title>Dabar Designs | Graphic Design Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -579,6 +594,28 @@
             min-height: 130px;
         }
 
+        .form-status {
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            display: none;
+            text-align: center;
+        }
+
+        .form-status.success {
+            background: rgba(34, 197, 94, 0.15);
+            color: #86efac;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            display: block;
+        }
+
+        .form-status.error {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            display: block;
+        }
+
         /* ========== FOOTER ========== */
         footer {
             background: #070b14;
@@ -914,25 +951,28 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <input type="text" placeholder="Project Inquiry">
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea placeholder="Tell me about your project..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
-                </form>
+                <div>
+                    <div class="form-status" id="formStatus"></div>
+                    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -954,7 +994,7 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
+        // ========== MOBILE MENU TOGGLE ==========
         function toggleMenu() {
             document.getElementById('navLinks').classList.toggle('active');
         }
@@ -966,7 +1006,7 @@
             });
         });
 
-        // Animate skill bars on scroll
+        // ========== ANIMATE SKILL BARS ON SCROLL ==========
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -979,14 +1019,62 @@
 
         document.querySelectorAll('.skill-card').forEach(card => observer.observe(card));
 
-        // Simple form handler
-        function handleSubmit(e) {
+        // ========== CONTACT FORM HANDLING ==========
+        async function handleSubmit(e) {
             e.preventDefault();
-            alert('Thank you for your message! (This is a demo �� connect the form to Formspree, EmailJS, or Netlify Forms to make it work for real.)');
-            e.target.reset();
+            const form = document.getElementById('contactForm');
+            const statusDiv = document.getElementById('formStatus');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Replace with your Formspree form ID
+                const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID';
+                
+                const formData = new FormData(form);
+                const response = await fetch(formspreeEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success
+                    statusDiv.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
+                    statusDiv.classList.add('success');
+                    statusDiv.classList.remove('error');
+                    form.reset();
+                    
+                    // Clear message after 5 seconds
+                    setTimeout(() => {
+                        statusDiv.classList.remove('success');
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Error
+                statusDiv.textContent = '✗ Error sending message. Please configure Formspree (see README) or try again later.';
+                statusDiv.classList.add('error');
+                statusDiv.classList.remove('success');
+                
+                // Clear error after 5 seconds
+                setTimeout(() => {
+                    statusDiv.classList.remove('error');
+                }, 5000);
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
         }
 
-        // Active nav link on scroll
+        // ========== ACTIVE NAV LINK ON SCROLL ==========
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-links a');
 
