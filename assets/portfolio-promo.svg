@@ -1,0 +1,150 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#e5e5e5"/>
+    </linearGradient>
+    <linearGradient id="lightYellow" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8d93b"/>
+      <stop offset="100%" stop-color="#f1c40f"/>
+    </linearGradient>
+    <linearGradient id="chairShade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5d013"/>
+      <stop offset="100%" stop-color="#d19f00"/>
+    </linearGradient>
+    <linearGradient id="darkAccent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2128"/>
+      <stop offset="100%" stop-color="#2a2e36"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bgGrad)"/>
+
+  <g opacity="0.9">
+    <text x="520" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#1a1a1a">Your Vision.</text>
+    <text x="780" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#1a1a1a">Our Creativity</text>
+  </g>
+
+  <g transform="translate(120 60)">
+    <circle cx="50" cy="70" r="52" fill="#1d1d1d"/>
+    <circle cx="50" cy="70" r="34" fill="#f5f5f5"/>
+    <path d="M26 54c8-20 43-26 60-4l-10 10c-9-12-25-11-35 0l-15-6z" fill="#1d1d1d"/>
+    <path d="M40 70l14 10 12-10v24H40z" fill="#1d1d1d"/>
+    <path d="M50 50l10 20-15 9-10-18z" fill="#1d1d1d"/>
+    <path d="M63 56l13 9-8 19-15-10z" fill="#1d1d1d"/>
+    <circle cx="38" cy="70" r="7" fill="#1d1d1d"/>
+    <circle cx="65" cy="70" r="7" fill="#1d1d1d"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M220 390c0-60 48-108 108-108h320c60 0 108 48 108 108v12H220z" fill="url(#chairShade)"/>
+    <path d="M150 410c0-22 18-40 40-40h420c22 0 40 18 40 40v220c0 30-24 54-54 54H206c-30 0-54-24-54-54V410z" fill="url(#chairShade)"/>
+    <path d="M190 420h340c25 0 45 20 45 45v160H145V465c0-25 20-45 45-45z" fill="#efc912"/>
+    <rect x="230" y="500" width="340" height="140" rx="38" fill="#f3d63b" opacity="0.8"/>
+    <path d="M142 640l110 165h485l-110-165z" fill="#e2b60e" opacity="0.8"/>
+    <rect x="182" y="630" width="446" height="20" rx="10" fill="#d29900" opacity="0.5"/>
+  </g>
+
+  <g transform="translate(250 330)">
+    <g>
+      <ellipse cx="267" cy="434" rx="124" ry="22" fill="#000" opacity="0.12"/>
+      <path d="M235 175c18-46 90-48 107 0l25 120c4 17-11 32-29 32h-96c-14 0-25-12-22-26l15-126z" fill="#f5d13c"/>
+      <path d="M202 271l86 68 72-68-59-33-99 33z" fill="#f7df4d"/>
+      <path d="M285 239c26 0 45 20 45 45v58h-88v-58c0-26 21-45 43-45z" fill="#f8db4a"/>
+      <path d="M275 238l40 30-14 89h-57c-8-47-4-88 31-119z" fill="#f0cb06" opacity="0.7"/>
+      <path d="M318 182c32 16 74 63 77 108l-50 12c-19-50-29-87-27-120z" fill="#f5d13c"/>
+      <path d="M225 215c-28 10-58 46-70 102l52 25c13-51 39-81 93-109l-75-18z" fill="#f5d13c"/>
+      <rect x="245" y="210" width="92" height="42" rx="18" fill="#f0bf20"/>
+      <path d="M260 202c12-22 42-25 57 0l-17 16h-23z" fill="#f4d343"/>
+      <rect x="261" y="288" width="72" height="27" rx="12" fill="#f3d63b"/>
+      <rect x="226" y="580" width="150" height="80" rx="26" fill="#f3d63b"/>
+      <rect x="206" y="628" width="190" height="34" rx="17" fill="#e0b51a"/>
+      <path d="M136 535l68 95 40-12-22-102z" fill="#f5d13c"/>
+      <path d="M405 520l78 120-32 26-101-112z" fill="#f5d13c"/>
+      <path d="M150 632h76l-38 150h-76z" fill="#f4d53f"/>
+      <path d="M388 632h72l36 150h-83z" fill="#f4d53f"/>
+    </g>
+
+    <g>
+      <path d="M218 300c21-24 43-34 68-34s45 11 62 30l-18 28c-21-20-53-25-83-15z" fill="#d9a72b"/>
+      <path d="M234 283l54-36 50 35-18 19-36-15-34 12z" fill="#e4b52a"/>
+      <path d="M248 240h69l-12 28h-44z" fill="#f2d54d"/>
+      <path d="M240 263c16-13 26-18 42-18 18 0 34 6 44 18l-14 16c-9-8-19-12-30-12-12 0-23 4-32 12z" fill="#2a2a2a"/>
+      <rect x="244" y="480" width="127" height="18" rx="9" fill="#f4d13a"/>
+      <path d="M258 515l64 0 19 38-102 0z" fill="#f0d75d"/>
+    </g>
+
+    <g>
+      <ellipse cx="270" cy="390" rx="85" ry="73" fill="#fed93d"/>
+      <path d="M182 323c30-38 74-52 118-46l-18 47c-41-7-74 14-100 64z" fill="#f8d73a"/>
+      <path d="M220 290l-60 97 54 48 78-95-72-50z" fill="#f0b301" opacity="0.7"/>
+      <path d="M150 346l58 44-20 60-90-72z" fill="#f2d12d"/>
+      <path d="M333 369l73 60-46 46-88-52z" fill="#f2d12d"/>
+      <path d="M174 318c22-31 39-44 58-52l62 8-19 50-49 47-52-53z" fill="#f4d33b"/>
+      <path d="M215 290l-22 68 70 39 36-59-84-48z" fill="#f8d63b"/>
+      <circle cx="250" cy="320" r="60" fill="#f0cc37"/>
+      <circle cx="250" cy="320" r="44" fill="#2d2d2d" opacity="0.2"/>
+      <path d="M210 318l45 34 36-48 12 45-40 30-64-57z" fill="#1c1c1c" opacity="0.75"/>
+    </g>
+
+    <g transform="translate(210 465)">
+      <rect x="0" y="0" width="180" height="110" rx="16" fill="#c7c7c7"/>
+      <rect x="16" y="16" width="148" height="80" rx="12" fill="#f0f0f0"/>
+      <path d="M24 83h122" stroke="#c9c9c9" stroke-width="8" stroke-linecap="round"/>
+      <path d="M30 48l42 40 31-30 26 26 17-18" fill="none" stroke="#f0ba31" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="42" cy="53" r="9" fill="#f0ba31"/>
+      <circle cx="67" cy="64" r="9" fill="#f0ba31"/>
+      <circle cx="91" cy="80" r="9" fill="#f0ba31"/>
+    </g>
+  </g>
+
+  <g transform="translate(680 260)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" fill="#0e0e0e">Let’s Handle Your</text>
+    <text x="0" y="150" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="900" fill="#0e0e0e">NEXT</text>
+    <text x="0" y="290" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="900" fill="#0e0e0e">PROJECT</text>
+  </g>
+
+  <g>
+    <rect x="760" y="430" width="260" height="260" rx="28" fill="#f3f3f3" opacity="0.82"/>
+    <text x="810" y="485" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#101010">What we offer</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#111111">
+      <text x="810" y="545">• Flyer Design</text>
+      <text x="810" y="590">• Poster Design</text>
+      <text x="810" y="635">• Brand Design</text>
+      <text x="810" y="680">• Logo Design</text>
+      <text x="810" y="725">• Ebook Cover</text>
+      <text x="810" y="770">• Printing Mockup</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 1110)">
+    <rect x="0" y="0" width="520" height="116" rx="22" fill="#f8f8f8" opacity="0.88"/>
+    <path d="M88 22l-12 0a18 18 0 0 0-18 18v30a18 18 0 0 0 18 18h12a18 18 0 0 0 18-18V40a18 18 0 0 0-18-18zm0 0l6 8h-12l6-8zm6 72v6h-12v-6m0 0h12" fill="#f3c60a"/>
+    <text x="150" y="60" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0d0d0d">07038754805</text>
+    <text x="150" y="95" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0d0d0d">@quzzytaracademy</text>
+  </g>
+
+  <g transform="translate(760 1125)">
+    <rect x="0" y="0" width="260" height="140" rx="18" fill="#f4f4f4" opacity="0.8"/>
+    <rect x="28" y="42" width="88" height="56" rx="12" fill="#d9d9d9"/>
+    <text x="145" y="81" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#111111">DM us</text>
+  </g>
+
+  <g transform="translate(0 0)">
+    <rect x="40" y="1185" width="210" height="170" rx="20" fill="#d9d9d9" opacity="0.8"/>
+    <g transform="translate(80 1220)">
+      <ellipse cx="40" cy="110" rx="52" ry="60" fill="#d3ac00"/>
+      <rect x="30" y="20" width="20" height="70" rx="10" fill="#d3ac00"/>
+      <rect x="12" y="24" width="56" height="20" rx="10" fill="#e3c74d"/>
+    </g>
+  </g>
+
+  <g transform="translate(150 1220)">
+    <rect x="0" y="80" width="110" height="70" rx="8" fill="#e9e0d4"/>
+    <rect x="22" y="10" width="68" height="100" rx="8" fill="#f8f8f8"/>
+    <path d="M24 16h56v78H24z" fill="#f3f3f3"/>
+  </g>
+</svg>
