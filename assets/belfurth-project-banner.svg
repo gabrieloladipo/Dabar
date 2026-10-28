@@ -1,0 +1,89 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d56d5"/>
+      <stop offset="55%" stop-color="#0b7ae1"/>
+      <stop offset="100%" stop-color="#3acfff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="#eefbff" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#d9f3ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#d9f3ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shirt" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0ca5f5"/>
+      <stop offset="100%" stop-color="#0d6ae0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#0d223d" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="600" cy="200" rx="520" ry="220" fill="url(#glow)"/>
+
+  <g opacity="0.7" stroke="#d4fbff" stroke-width="3" fill="none">
+    <path d="M30 140L130 140L130 50"/>
+    <path d="M160 180L260 180L260 110"/>
+    <path d="M1000 150L1120 150L1120 230"/>
+    <path d="M850 200L930 200"/>
+    <path d="M150 710L260 710L260 610"/>
+  </g>
+
+  <g transform="translate(90 150)" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <rect x="0" y="0" width="260" height="56" rx="16" fill="#ffffff" fill-opacity="0.2"/>
+    <text x="130" y="36" text-anchor="middle" font-size="24" fill="#ffffff">Come my guy</text>
+  </g>
+
+  <g transform="translate(810 150)" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <rect x="0" y="0" width="260" height="56" rx="16" fill="#ffffff" fill-opacity="0.18"/>
+    <text x="130" y="36" text-anchor="middle" font-size="24" fill="#ffffff">bigtimesolution</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900" fill="#ffffff">
+    <text x="80" y="210" font-size="130">DO YOU</text>
+    <text x="80" y="350" font-size="150">NEED HELP?</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#eaf7ff">
+    <text x="80" y="420" font-size="27">ARE YOU IN NEED OF EXCEPTIONAL</text>
+    <text x="80" y="455" font-size="27">SOFTWARE DEVELOPMENT AND DIGITAL</text>
+    <text x="80" y="490" font-size="27">SOLUTIONS?</text>
+  </g>
+
+  <g>
+    <rect x="80" y="560" width="500" height="200" rx="28" fill="#edf5ff" opacity="0.9"/>
+    <text x="130" y="620" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="900" fill="#0d1c52">Our Services</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#111827" font-size="22">
+      <text x="130" y="675">▶ Advanced Technology Solutions</text>
+      <text x="130" y="710">▶ Sustainability Consulting</text>
+      <text x="130" y="745">▶ Training and Development</text>
+      <text x="130" y="780">▶ Product Design and Development</text>
+      <text x="130" y="815">▶ Digital Marketing Services</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M730 600C730 516 792 447 866 447C940 447 1002 516 1002 600V670H730V600Z" fill="url(#shirt)"/>
+    <path d="M722 690H1008L1054 818C1059 838 1045 856 1026 856H704C685 856 671 838 676 818L722 690Z" fill="url(#shirt)"/>
+    <path d="M836 680H972L956 822H850L836 680Z" fill="#0c5dc9" opacity="0.55"/>
+  </g>
+
+  <g transform="translate(670 260)">
+    <path d="M250 100C290 82 340 91 368 120C395 148 406 209 399 250C393 287 346 331 302 350C260 366 204 361 170 330C143 304 112 235 110 184C108 140 154 108 188 101C211 95 228 96 250 100Z" fill="#f2d443"/>
+    <path d="M153 184C146 138 172 112 204 111C251 110 287 146 296 184C305 223 297 277 258 308C226 333 185 338 150 320C117 304 98 270 99 233C100 210 113 194 153 184Z" fill="#f0c62d"/>
+    <path d="M210 161C245 152 274 160 292 182C305 198 309 221 305 247C299 283 269 311 232 315C193 319 157 300 139 268C123 239 130 195 155 173C175 156 196 157 210 161Z" fill="#f9e36f" opacity="0.35"/>
+    <circle cx="218" cy="218" r="85" fill="#2c9ef3" opacity="0.2"/>
+    <path d="M146 218L214 182L287 214L277 287L201 315L146 281Z" fill="#f0c62d" opacity="0.95"/>
+    <path d="M239 176C271 170 303 179 327 205C351 230 357 275 340 304C326 327 297 344 265 349C228 356 188 344 165 314C145 289 136 244 151 212C165 182 199 174 239 176Z" fill="#f3d243"/>
+    <path d="M192 197C214 182 245 180 268 196C290 212 301 240 295 268C287 302 256 332 221 335C182 338 149 311 138 278C128 246 148 208 192 197Z" fill="#f7d95e" opacity="0.8"/>
+    <circle cx="215" cy="227" r="19" fill="#1d1d1d"/>
+    <circle cx="286" cy="233" r="19" fill="#1d1d1d"/>
+    <path d="M212 304C245 328 277 329 306 304" fill="none" stroke="#1b1b1b" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(735 610)">
+    <rect x="0" y="0" width="220" height="53" rx="18" fill="#ffffff" opacity="0.15"/>
+    <text x="110" y="34" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f8fdff">belturth</text>
+  </g>
+</svg>
